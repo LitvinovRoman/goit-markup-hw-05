@@ -83,7 +83,7 @@ a {
   fill: currentColor;
   margin-right: 10px;
   width: 16px;
-  height: 10px;
+  height: 12px;
 }
 .tel {
   fill: currentColor;
@@ -166,8 +166,9 @@ a {
 }
 
 .contact {
-  display: block;
+  display: flex;
   align-items: center;
+  justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
