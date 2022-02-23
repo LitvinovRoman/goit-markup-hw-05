@@ -158,11 +158,11 @@ height: 4px;
 background: var(--accent-color);
 border-radius: 2px;
 left: 0;
-bottom: 0;
+bottom: -1px;
 
 }
 
-.navigation-list .link {
+.navigation-list .header-text {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -319,7 +319,6 @@ padding-bottom: 94px;
 
 /* секции */
 .chem-p {
-padding: 27px;
 
   font-weight: bold;
   font-size: 14px;
@@ -346,6 +345,7 @@ background: rgba(47, 48, 58, 0.8);
 
   display: flex;
   justify-content: center;
+  padding: 27px;
 }
 
 .item-customers {
@@ -639,10 +639,14 @@ margin-left: 70px;
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   color: var(--button-second-color);
-  text-align: justify;
   
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--timing-function);
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 }
 
 .item-two .link:hover,
@@ -717,7 +721,7 @@ padding: 20px 24px;
 .list-pfo-btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
 }
