@@ -506,15 +506,19 @@ fill: var(--icon-color-one);
 .social-link {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 
-  transition: fill 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+
+    cursor: pointer;
 }
-.social-item:hover .social-link,
-.social-item:focus .social-link {
-  fill: var(--button-second-color);
-}
-.social-item:hover,
-.social-item:focus {
+
+.social-link:hover,
+.social-link:focus {
 background-color: var(--accent-color);
 }
 
@@ -523,18 +527,7 @@ background-color: var(--accent-color);
   height: 20px;
   fill: var(--button-second-color);
 }
-.social-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
 
-  transition: background-color 250ms var(--timing-function);
-}
 .social .social-item:not(:first-child) {
   margin-left: 10px;
 }
